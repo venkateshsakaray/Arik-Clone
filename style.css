@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(218, 197, 167);
+}
+
+main {
+  width: 100%;
+}
+
+.v1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.v1 img {
+  width: 85%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.v1 h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 3.5rem;
+}
+.v1 p {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  margin: 0.9rem 0;
+  opacity: 0.6;
+}
+.v1 p br {
+  display: none;
+}
+.v1 a {
+  text-decoration: none;
+  color: rgb(218, 197, 167);
+  display: inline-flex;
+  gap: 8px;
+  padding-top: 10px;
+}
+.v1 a img {
+  width: 24px;
+  height: 24px;
+  padding-top: 5px;
+}
+
+.v2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 5rem;
+}
+.v2 .marque {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.v2 .marque::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0e0e0e 0%, transparent 20%, transparent 80%, #0e0e0e 100%);
+  pointer-events: none;
+}
+.v2 .text {
+  display: flex;
+  gap: 3rem;
+  padding: 0 1.5rem;
+  animation: marquue 10s linear infinite both;
+}
+.v2 .text p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.v3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 2rem;
+}
+.v3 .dev {
+  margin-top: 1rem;
+}
+.v3 .cont {
+  margin-top: 1rem;
+}
+.v3 .web,
+.v3 .dev,
+.v3 .cont {
+  background-color: #181716;
+  border-radius: 2px;
+  border: 0.2px solid rgba(218, 197, 167, 0.1);
+  padding: 2rem;
+}
+.v3 .web p,
+.v3 .dev p,
+.v3 .cont p {
+  padding-top: 0.5rem;
+  line-height: 1.2;
+  opacity: 0.5;
+}
+.v3 .web h2,
+.v3 .dev h2,
+.v3 .cont h2 {
+  line-height: 1.6;
+  font-weight: 300;
+}
+.v3 .web a,
+.v3 .dev a,
+.v3 .cont a {
+  text-decoration: none;
+  color: rgb(218, 197, 167);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 2rem;
+}
+.v3 .web a img,
+.v3 .dev a img,
+.v3 .cont a img {
+  width: 24px;
+  height: 24px;
+  padding-top: 5px;
+}
+
+.v4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+.v4 .work p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.v4 .work a {
+  text-decoration: none;
+  color: rgb(218, 197, 167);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 2rem;
+}
+.v4 .work a img {
+  width: 24px;
+  height: 24px;
+  padding-top: 5px;
+}
+.v4 .work img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@keyframes marquue {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .v1 html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .v1 h1 {
+    font-size: 6.5rem;
+  }
+  .v1 p {
+    font-family: "Chillax Light", "Chillax Light Placeholder", sans-serif;
+    font-size: 1rem;
+  }
+  .v1 p br {
+    display: block;
+  }
+  .v1 img {
+    width: 36%;
+  }
+  .v2 {
+    width: 100%;
+  }
+  .v3 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .v3 .dev {
+    margin-top: 0rem;
+  }
+  .v3 .cont {
+    margin-top: 0rem;
+  }
+}/*# sourceMappingURL=style.css.map */
